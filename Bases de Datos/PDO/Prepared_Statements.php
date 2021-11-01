@@ -1,20 +1,41 @@
 <?php 
 
+// Para recoger y enviar el id por la URL
 $id = $_GET['id'];
 
 try {
     $conexion = new PDO('mysql:host=localhost;dbname=practicafinal', 'root','');
-    echo 'La conexion se realizo con exito'; 
+   
+    $statement = $conexion->prepare('SELECT * FROM clientes LIMIT 10');
+    // $statement-> execute(array(':Codigo' => 'C0001'));
+    // $statement-> execute(array(':Codigo' => $id));
 
-    $statement = $conexion->prepare('Select * From clientes where Codigo = :id');
-    $statement-> execute(array(':id' => 5));
+    # fethAll
+    $statement-> execute();
 
-    #fetchAll devuelve todos los valores fetch solo uno
+    # Se pueden agregar mas de un campo
+    // $statement-> execute(array(':Codigo' => $id, ':nombre' => 'Alvaro'));
+
+  /*
     $resultados = $statement->fetch();
-    
-    foreach($resultados as $fila){
-        echo '<br>'.$fila['Nombre'];
-    }
+    echo '<pre>';
+        print_r($resultados);
+    echo '</pre>';
+*/
+
+  # fetchAll devuelve todos los valores fetch solo uno
+  $resultados = $statement->fetchAll();
+ /*
+  echo '<pre>';
+      print_r($resultados);
+  echo '</pre>';*/
+
+  # Mostrar los datos
+  foreach($resultados as $usuario){
+      echo $usuario['Nombre'].'<br>';
+  }
+
+
 
 }catch (PDOException $e){
     echo "Error: ".$e->getMessage();
