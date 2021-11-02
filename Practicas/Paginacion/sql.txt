@@ -1,0 +1,7 @@
+create table articulos (
+    id int (100) NOT NULL AUTO_INCREMENT, 
+    PRIMARY key (id), 
+    articulo varchar (240)
+)
+
+INSERT INTO articulos(id, articulo) VALUES (null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
