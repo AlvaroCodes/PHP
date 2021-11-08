@@ -1,0 +1,9 @@
+CREATE table fotos (
+    
+    id int (100) AUTO_INCREMENT, 
+    titulo varchar (200), 
+    imagen varchar (200), 
+    texto text, 
+    primary key (id)
+
+)

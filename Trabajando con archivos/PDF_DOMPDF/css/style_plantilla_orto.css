@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.centrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div p {
+    font-weight: 1.3rem;
+}
+
+header img {
+    height: 80px;
+    width: 300px;
+}
+
+table, tr, td {
+    width: 100%;
+
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+table tr td{
+    padding: 9px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.logo_fondo{
+    z-index: -1;
+}
