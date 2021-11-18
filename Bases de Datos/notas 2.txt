@@ -1,0 +1,2 @@
+puedes crear un archivo llamado functions.inc y poner ahí la función que necesitas
+Se propone nombrar el archivo con extensión inc ya que de esta manera se puede programar el servidor de Apache para negar la vista por web a estos archivos.

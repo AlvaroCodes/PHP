@@ -1,0 +1,14 @@
+Para acceder -> abrir xampp -> http://localhost/phpmyadmin/
+Usuario: root 
+Contraseña: root o en blanco
+
+Se puede acceder desde la consola: 
+Para accder -> cd rutaXampp/mysql/bin
+Para acceder usuarios -> mysql -u nombreUsuario -p
+
+-> Otras aplicaciones visuales para trabajar con Mysql <-
+
+1.- https://www.heidisql.com/
+2.- http://www.sequelpro.com/
+3.- https://dev.mysql.com/downloads/workbench/
+4.- https://www.navicat.com/en/products/navicat-for-mysql
