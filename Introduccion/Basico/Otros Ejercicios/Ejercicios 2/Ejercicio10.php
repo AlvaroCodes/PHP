@@ -24,15 +24,6 @@ echo "</pre>";
 for ($i = 0; $i<sizeof($sueldos); $i++){
     if ($sueldos[$i] >= 1000 && $sueldos[$i]<= 2000){
 
-        /*
-        if ($edad[$i]>45){
-            $sueldos[$i] += $sueldos[i] * 0.3;
-        }else {
-            $sueldos[$i] += $sueldos[i] * 0.10;
-        }
-        */
-
-
         $sueldos[$i]+= ($edad[$i]>45)? $sueldos[$i] * 0.3:$sueldos[$i] * 0.10;
 
     } else if ($sueldos[$i] < 1000){
@@ -48,13 +39,10 @@ for ($i = 0; $i<sizeof($sueldos); $i++){
     }
 }
 
-
 echo "<pre>";
     print_r ($edad);   
- 
 echo "</pre>";
 
 echo "<pre>";
     print_r ($sueldos);   
-  
 echo "</pre>";
