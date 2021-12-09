@@ -7,12 +7,12 @@
     <title>Inscripcion</title>
 </head>
 <body>
-        <form action="../Resultados/EJ8_Resultados.php" method="post">
-        <label for="horas">Introduce las horas: </label>
-        <input type="number" name="horas">
-       
+        <form action="../Resultados/EJ10_Resultados.php" method="post">
+        <label for="kb">Introduce el numero de kb: </label>
+        <input type="number" name="kb">
+
         <input type="submit" value="Enviar Formulario">
 
-        <a href="../index.html">Volver atrar</a>
+        <a href="../index.php">Volver atrar</a>
 </body>
 </html>
