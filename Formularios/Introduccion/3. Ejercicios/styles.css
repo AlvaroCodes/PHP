@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 10px;
+    height: 60px;
+    margin-bottom: 50px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+article {
+    background-color: burlywood;
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+    margin: 15px;
+    height: 200px;
+    width: 300px;
+}
+
+article button {
+    margin-top: 20px;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 5px;
+}
